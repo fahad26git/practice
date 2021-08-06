@@ -1,0 +1,15 @@
+h3{
+    color: blue;
+}
+
+a{
+    color:burlywood;
+}
+h1+p {
+    font-weight: 200%;
+    color:darkblue;
+}
+a:hover{
+    color:saddlebrown;
+    text-decoration: none;
+}

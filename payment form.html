@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <style>
+           *{
+               box-sizing:border-box 
+           }
+           body{
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               margin: 15px 30px;
+               font-size: 17px;
+               padding: 8px;
+               background-color: blanchedalmond;
+           }
+           .container{
+
+
+               padding: 5px 20px 15px 20px;
+               border: 5px solid lightgray;
+               border-radius: 4px;
+               
+           }
+           input[type="text"],
+           input[type="email"],
+           input[type="number"],
+           input[type="password"],
+           input[type="date"],
+           select,textarea{
+               width: 100%;
+               padding: 12px;
+               border: 1px solid#ccc;
+               border-radius: 5px;
+               margin: 10px;
+
+           }
+           fieldset{
+               background-color: blanchedalmond;
+               border:1px solid#ccc;
+           }
+           .main_heading{
+               text-align: center;
+           }
+           input[type="submit"]{
+               color:solid black;
+               font-size: 17px;
+               padding: 12px 20px;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+               width: 100%;
+               background-color:  gray;
+           }
+           input[type="submit"]:hover{
+               
+               background-color:chartreuse ;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <form action="">
+         <h1 class="main_heading">Payment form</h1>
+         <p>Reruired fileds are followed by *</p>
+         <h2>contact information</h2>
+         <p> Name:* <input type="text" name="name" required> </p>
+         <fieldset>
+             <legend>Gender</legend>
+             <p>Male<input type ="radio" name="Gender" id="Male"></p>
+             <p>Female<input type ="radio" name="Female" id="Female"></p>
+         </fieldset>
+         <p>address:<textarea name="address" id="address" cols="108" rows="8"></textarea></p>
+         <p>email *: <input type="email" name="email" id="email" required></p>
+         <p> pincode : <input type="number" name="pincode" id="pincode"></p>
+        <!-- <p> address : <input type ="text" name ="address" id="address"></p>-->
+
+         <h2>Payment information</h2>
+         <p>caed type * : 
+             <select name="card_type" id ="card_type" required>
+             <option value="">--select a card type--</option>
+             <option value="visa">visa</option>
+             <option value="takay">takay</option>
+             <option value="mastercard">mastercard</option>
+            </select>
+         </p>
+         <p>
+             Card Number <input type="number" name="card_number" id="card_number">
+         </p>
+         <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"></p>
+         <p>CVV <input type="password" name="CVV" id="CVV"></p>
+         <input type="submit" value="Pay Now">
+     </form>
+    </div>
+</body>
+</html>
